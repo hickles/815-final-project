@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(response => response.json())
       .then(data => {
         const meal = data.meals[0];
-        updateMealDetails(meal); // Update meal details on the index page
+        updateMealDetails(meal); 
         localStorage.setItem('mealData', JSON.stringify(meal));
-        window.location.href = 'about.html'; // Navigate to the "about" page
+        window.location.href = 'about.html'; 
       });
   });
 
