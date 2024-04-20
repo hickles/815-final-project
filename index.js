@@ -17,9 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-  viewDetailsBtn.addEventListener('click', () => {
-    window.location.href = 'about.html'; 
-  });
-});
-
-
