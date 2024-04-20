@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const meal = data.meals[0];
         updateMealDetails(meal); 
         localStorage.setItem('mealData', JSON.stringify(meal));
-        window.location.href = 'about.html'; 
       });
   });
 
   viewDetailsBtn.addEventListener('click', () => {
-    window.location.href = 'about.html'; 
+    window.location.href = 'about.html';
   });
+
 
   function updateMealDetails(meal) {
     const mealImage = document.getElementById('meal-image');
@@ -25,5 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mealName.textContent = meal.strMeal;
   }
 });
+
 
 
